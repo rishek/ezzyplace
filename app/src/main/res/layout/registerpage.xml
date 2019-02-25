@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:src="@drawable/stepback"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sans"
+            android:text="REGISTER NOW"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/registername"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_round"
+            android:drawableLeft="@drawable/usericon"
+            android:elevation="5dp"
+            android:hint="Name"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/registerpasswrd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_text_round"
+            android:drawableLeft="@drawable/lockicon"
+            android:drawableRight="@drawable/eyeicon"
+            android:elevation="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <EditText
+            android:id="@+id/registermail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_text_round"
+            android:drawableLeft="@drawable/email"
+            android:elevation="5dp"
+            android:hint="E-mail"
+            android:paddingLeft="10dp" />
+
+        <EditText
+           android:id="@+id/registercountry"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_text_round"
+            android:drawableLeft="@drawable/world"
+            android:elevation="5dp"
+            android:hint="Country"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/registernumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_text_round"
+            android:drawableLeft="@drawable/phone"
+            android:elevation="5dp"
+            android:hint="Mobile Number"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_round"
+            android:fontFamily="@font/sans"
+            android:text="REGISTER NOW"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/sans"
+            android:text="Or register account using social media"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb" />
+
+            <ImageView
+                android:id="@+id/tweet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/gplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/gplus" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
